@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AppBar, Toolbar, Typography, Button, Container, Box, Grid, Paper, IconButton, Drawer, List, ListItem, ListItemButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import WhatsappFloatingButton from "@/app/WhatsappFloatingButton";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export default function Home() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -100,8 +101,14 @@ export default function Home() {
             <Container>
                 {/* About Section */}
                 <Box id="about" textAlign="center" py={6}>
-                    <Typography variant="h4" fontWeight="bold" sx={{ fontFamily: "'Roboto', sans-serif", color: "white" }}>Sobre Nosotros</Typography>
-                    <Typography variant="body1" mt={2} sx={{ fontFamily: "'Roboto', sans-serif", color: "white" }}>Somos apasionados del surf y organizamos viajes a los mejores spots del mundo.</Typography>
+                    <Typography variant="h3" fontWeight="bold" sx={{ fontFamily: "'Pacifico', cursive", color: "white" }}>
+                        Sobre Nosotros
+                    </Typography>
+                    <Typography variant="h6" mt={2} sx={{ fontFamily: "'Quicksand', sans-serif", fontSize: "1.3rem", maxWidth: "800px", mx: "auto", lineHeight: "1.8", color: "white" }}>
+                        Amamos el surf y queremos compartir esa pasión contigo. Organizamos surf trips a destinos paradisíacos,
+                        te enseñamos a dominar las olas y te sumergimos en una experiencia que va más allá del deporte. ¡Vive el surf al máximo con nosotros!
+                    </Typography>
+
                 </Box>
 
                 {/* Trips Section */}
@@ -144,6 +151,24 @@ export default function Home() {
             {/* WhatsApp Button */}
             <Box sx={{ position: "fixed", bottom: 16, right: 16 }}>
                 <WhatsappFloatingButton />
+            </Box>
+
+            {/* Footer con redes sociales */}
+            <Box sx={{ backgroundColor: "#111", color: "white", textAlign: "center", py: 3, mt: 4 }}>
+                <Typography variant="h6" sx={{ fontFamily: "'Roboto', sans-serif" }}>Síguenos en nuestras redes</Typography>
+                <Box mt={1}>
+                    <IconButton
+                        href="https://www.instagram.com/realfunwave/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{ color: "white" }}
+                    >
+                        <InstagramIcon fontSize="large" />
+                    </IconButton>
+                </Box>
+                <Typography variant="body2" sx={{ mt: 2, fontFamily: "'Roboto', sans-serif" }}>
+                    © {new Date().getFullYear()} Real Fun Wave. Todos los derechos reservados.
+                </Typography>
             </Box>
         </Box>
     );

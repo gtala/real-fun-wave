@@ -47,8 +47,8 @@ const WhatsappIcon = () => {
           y2="8.97793"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#20B038" />
-          <stop offset="1" stop-color="#60D66A" />
+          <stop stopColor="#20B038" />
+          <stop offset="1" stopColor="#60D66A" />
         </linearGradient>
       </defs>
     </svg>
