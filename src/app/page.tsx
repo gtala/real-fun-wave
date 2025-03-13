@@ -33,7 +33,7 @@ export default function Home() {
             <AppBar position="static" sx={{ backgroundColor: "black" }}>
                 <Toolbar>
                     <Image
-                        src="/assets/logo.jpg" // Replace with your actual logo path
+                        src="https://instagram.fubt3-1.fna.fbcdn.net/v/t51.2885-19/465139448_1617668455773947_216651395761797997_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fubt3-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2AHkAzZTSUI-4ySjqep4aNoMBJFkXN-WY4qU_04SbNCasPW-gI1Xrf3FR03p5_vjuGAltimTInVjmk-4hY4Y7Vjw&_nc_ohc=F8sT3luCcS4Q7kNvgHhWy3P&_nc_gid=4b013f1aa6c847bbb33c6f43105e6b57&edm=AEYEu-QBAAAA&ccb=7-5&oh=00_AYHskEA-i4SX7bDLQ-TPslAjpHHzeuE4qTprxjpoHlZAfg&oe=67D8E471&_nc_sid=ead929"
                         alt="Real Fun Wave Logo"
                         width={50}
                         height={50}
