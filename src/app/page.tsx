@@ -62,15 +62,14 @@ export default function Home() {
                     </Grid>
                 </Box>
 
-                {/* Next Trips Section */}
-                <Box id="next-trips" textAlign="center" py={6} bgcolor="#f0f0f0">
-                    <Typography variant="h4" fontWeight="bold" sx={{ fontFamily: "'Roboto', sans-serif", color: "black" }}>Próximos Viajes</Typography>
+                <Box id="next-trips" textAlign="center" py={6} bgcolor="black">
+                    <Typography variant="h4" fontWeight="bold" sx={{ fontFamily: "'Roboto', sans-serif", color: "white" }}>Próximos Viajes</Typography>
                     <Grid container spacing={3} mt={3}>
                         {["Maldivas - Abril 2025", "Australia - Julio 2025"].map((trip, index) => (
                             <Grid item xs={12} md={6} key={index}>
-                                <Paper sx={{ p: 3, backgroundColor: "#bbdefb" }}>
-                                    <Typography variant="h6" sx={{ fontFamily: "'Roboto', sans-serif", color: "black" }}>{trip}</Typography>
-                                    <Typography sx={{ fontFamily: "'Roboto', sans-serif", color: "black" }}>Reserva tu lugar y disfruta de las mejores olas en el paraíso.</Typography>
+                                <Paper sx={{ p: 3, backgroundColor: "#333" }}>
+                                    <Typography variant="h6" sx={{ fontFamily: "'Roboto', sans-serif", color: "white" }}>{trip}</Typography>
+                                    <Typography sx={{ fontFamily: "'Roboto', sans-serif", color: "white" }}>Reserva tu lugar y disfruta de las mejores olas en el paraíso.</Typography>
                                 </Paper>
                             </Grid>
                         ))}
